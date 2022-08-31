@@ -1,0 +1,20 @@
+.wrapper {
+    max-width: 70rem;
+    margin: 2rem auto;
+    padding: 0 1rem;
+
+    display: grid;
+    grid-template-columns: 256px 1fr;/*fr para tamanho flexível   duas colunois, por isso 2 valores*/
+    gap: 2rem;
+    align-items: flex-start; /* para as caixas se alinharem para o topo */
+}
+
+/*quando a tela for menor que 768px(mobile)*/
+@media (max-width: 768px) {
+    html {
+        font-size: 87.5%;
+    }
+    .wrapper {
+        grid-template-columns: 1fr;/*ao invés de ter 2 colunas terá 1 */
+    }
+}
